@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh">
+<link rel = "icon" href ="附件/其他附件/狗头.png">
+<head>
+    <meta charset="UTF-8">
+    <script src="附件/js附件/1.js"></script>
+    <canvas id="pinkboard" style="position: absolute;z-index:9999;margin-top:10%; width:50%;height: 100%;"></canvas>
+    <script src="附件/js附件/2.js"></script>
+    <link rel="stylesheet" href="附件/css附件/1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .nav {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .nav a {
+            display: inline-block;
+            padding: 20px;
+            color: rgba(0, 0, 0, 0.8);
+        }
+
+        .nav a:hover {
+            background-color: rgba(23, 123, 216, 0.6);
+            color: white;
+        }
+        /*背景图片*/
+        body {
+            background: url("附件/其他附件/背景1.gif");
+        }
+        /* 头部标题 */
+        .top {
+            text-align: left;
+            color: rgba(255, 254, 254, 0.8);
+            font-family: YouYuan;
+        }
+
+        .main {
+            margin-top: 20px;
+            height: 20000px;
+        }
+
+        /* 创建两列 */
+        /* Left column */
+        .left {
+            float: left;
+            width: 75%;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* 右侧栏 */
+        .right {
+            float: right;
+            width: 20%;
+            margin-right: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* 个人相册 */
+        .imgset {
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            float: left;
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        /* 个人简介文字背景 */
+        .bj {
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        /* 个人简介头像 */
+        .bj img {
+            width: 70px;
+            height: 70px;
+            float: right;
+        }
+
+        /*编程作品的大小*/
+        .bj iframe {
+            width: 30%;
+            height: 272%;
+        }
+
+        /* 相册图片大小 */
+        img {
+            width: 220px;
+            height: 207px;
+            padding: 10px;
+        }
+
+        /* 标题居中及背景 */
+        h2 {
+            text-align: center;
+            font-family: KaiTi;
+        }
+
+        /*缩进字符*/
+        .indent {
+            text-indent: 30px;
+        }
+
+        audio {
+            width: 100%;
+        }
+    </style>
+    <title>主页</title>
+</head>
+<body>
+    <h1>
+        <div align="center" class="bj"><div><font color="blue"><em>Hi!欢迎来到我的主页～</em></font></div></div>
+    </h1>
+    <div class="nav">
+        <a href="#introduce">个人简介</a>
+        <a href="#photo">个人相册</a>
+        <a href="#music">音乐播放器</a>
+        <a href="#program">编程作品</a>
+        <!-- 跳转到彩蛋区域，彩蛋区域的id为：surprise -->
+        <a href="#surprise">彩蛋！！！！</a>
+        <a class="nav-link text-dark" onclick="love()">特效</a>
+    </div>
+
+<div class="main">
+    <!--个人相册-->
+    <div class="left">
+        <div class="imgset">
+            <div id="photo">
+                <h2>相册</h2>
+            </div>
+            <p>这些都是美丽的图片，想要的可以下载哦。
+            </p>
+            <img src="附件/其他附件/美图1.jpg"/>
+            <img src="附件/其他附件/美图2.jpg"/>
+            <img src="附件/其他附件/美图3.jpg"/>
+            <img src="附件/其他附件/美图4.jpg"/>
+            <img src="附件/其他附件/美图5.jpg"/>
+            <img src="附件/其他附件/美图6.jpg"/>
+            <img src="附件/其他附件/美图7.jpg"/>
+            <img src="附件/其他附件/美图8.jpg"/>
+        </div>
+    </div>
+
+    <!--个人简介-->
+    <div class="right">
+        <div class="bj">
+            <div id="introduce">
+                <h2>个人简介</h2>
+            </div>
+            <p>Hello!
+                我是来自中国湖南的狗头程序员，具有天真可爱，性格开朗，热爱生活的优良品质。
+                我很享受那些努力学习的日子，
+                因为我在学习使用<a href="https://www.runoob.com/python/python-tutorial.html">Python</a>
+                、<a href="https://www.runoob.com/html/html-tutorial.html">HTML</a>
+                、<a href="https://www.runoob.com/php/php-tutorial.html">PHP</a>
+                、<a href="https://www.runoob.com/cplusplus/cpp-tutorial.html">C++</a>。
+            </p>
+            <img src="附件/其他附件/狗头.png"/>
+            <p>姓名：狗头程序员</p>
+            <p>民族：汉族</p>
+            <p>年龄：（无限）岁</p>
+            <p>生日：2011.5.23</p>
+            <p>爱好:读书、足球、编程、弹钢琴</p>
+            <p>优点：乐观开朗、善解人意</p>
+            <p>技能：<a href="https://www.runoob.com/python/python-tutorial.html">Python</a>
+                、<a href="https://www.runoob.com/html/html-tutorial.html">HTML</a>
+                、<a href="https://www.runoob.com/php/php-tutorial.html">PHP</a>
+                、<a href="https://www.runoob.com/cplusplus/cpp-tutorial.html">C++</a>。</p>
+        </div>
+    </div>
+
+    <!--编程作品-->
+    <div class="left">
+        <div class="imgset">
+            <div id="program">
+                <h2>编程作品</h2>
+                <img src="附件/其他附件/植物大战僵尸.png"/>
+                <img src="附件/其他附件/俄罗斯方块.png"/>
+                <img src="附件/其他附件/大球吃小球.png"/>
+                <img src="附件/其他附件/坑人小游戏.png"/>
+                <p>编程作品，点击下方下载哦!</p>
+                <a href="编程作品.rar" download="编程作品.rar">
+            </div>
+        </div>
+    </div>
+
+    <!--音乐播放器-->
+    <div class="right">
+        <div class="bj">
+            <div id="music">
+                <h2>音乐播放器（音乐可下载）</h2>
+            </div>
+            BGM1:
+            <audio controls="controls">
+                <source src="附件/其他附件/侠.mp3">
+            </audio>
+            BGM2:
+            <audio controls="controls">
+                <source src="附件/其他附件/百忧戒.mp3">
+            </audio>
+        </div>
+    </div>
+
+    
+    <!--彩蛋-->
+    <div class="left">
+        <div id="surprise">
+            <video src="附件/其他附件/小鬼当家.mp4" controls="controls" height="700" wight="1910">video标签</video>
+        </div>
+    </div>
+
+</div>
+<address>
+    <div style="position:fixed; bottom:0px; width:100%; text-align:center;">
+        <p align="center">
+            <a href="mailto:479711452@qq.com">联系我，点击将打开邮件</a>
+        </p>
+    </div>
+</address>
+</body>
+</html>

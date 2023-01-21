@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <link rel = "icon" href ="附件/其他附件/狗头.png">
+    <title>检测浏览器</title>
+</head>
+<body>
+<div id="example"></div>
+<script>
+txt = "<p>浏览器代码名: " + navigator.appCodeName + "</p>";
+txt += "<p>浏览器名称: " + navigator.userAgent + "</p>";
+txt += "<p>浏览器版本信息: " + navigator.appVersion + "</p>";
+txt += "<p>是否支持Cookie: " + navigator.cookieEnabled + "</p>";
+txt += "<p>运行浏览器的操作系统:  " + navigator.platform + "</p>";
+document.getElementById("example").innerHTML=txt;
+</script>
+</body>
+</html>

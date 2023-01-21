@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<meta charset="UTF-8">
+<link rel = "icon" href ="附件/其他附件/狗头.png">
+<link rel = "stylesheet" href="附件/css/1.css">
+<title>检测条件</title>
+<head>
+    <h1>
+        <div align="center" class="bj"><div><font color="blue">Hi!现在你来到的是检测页～</font></div></div>
+    </h1>
+    <h2>
+        <div align="center" class="bj"><div><font color="red">检测结果点击第一个按钮查看，想进入主页点击第二个按钮查看</font></div></div>
+    </h2>
+    <script>
+        <!--
+        function changeBgClr(value)
+        {
+            document.body.style.backgroundColor=value
+        }
+        //-->
+    </script>
+    <style> 
+h2 {
+    font-weight: normal;
+}
+.radioStyle {
+    display: inline-block;
+}
+body{
+    background: wheat;
+}
+    </style>
+</head>
+<body>
+    <h3 align="center"><font color="deepyellow">背景颜色</font></h3>
+    <h4 align="center">
+    <div class="radioStyle">
+        <input name="like" id="likeC" type=radio value=orange onclick="changeBgClr(this.value)">橙色
+    </div>
+    <div class="radioStyle">
+        <input name="like" id="likeL" type=radio value=green onclick="changeBgClr(this.value)">绿色
+    </div>
+    <div class="radioStyle">
+        <input name="like" id="likeT" type=radio value=skyblue onclick="changeBgClr(this.value)">天蓝色
+    </div>
+    <div class="radioStyle">
+        <input name="like" id="likeW" type=radio value=wheat onclick="changeBgClr(this.value)">还原
+    </div>
+    </h4>
+    <div id="example"></div>
+    <script type="text/javascript">
+    <!--
+    alert("检测成功，您的浏览器支持JavaScript")
+    -->
+    </script>
+    <noscript>
+    <h3>对不起，您的浏览器不支持JavaScript，无法进入网页</h3>
+    </noscript>
+    <p align="center">
+        <a href="检测浏览器结果页.html"><button class="btn">检测结果</button></a>
+    </p>
+    <p align="center">
+        <a href="注册页.html"><button class="btn">进入网页</button></a>
+    </p>
+    <h3 align="center"><font color="red"><strong>注意!!!!</strong>如果浏览器不支持JavaScript，网页效果没这么好哦！</font></h3>
+</body>
+</html>
